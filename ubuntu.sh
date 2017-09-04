@@ -3,10 +3,10 @@
 install_apt_packages() {
   sudo apt-get -qq update
   sudo apt-get -y upgrade
-  sudo apt-get install -y \
+  sudo apt-get install -y curl zip unzip \
     gcc g++ make bison \
-    zip unzip \
-    global tig tree jq dos2unix lv silversearcher-ag
+    vim global \
+    tig tree jq dos2unix lv silversearcher-ag
 }
 
 install_bash_profile() {
