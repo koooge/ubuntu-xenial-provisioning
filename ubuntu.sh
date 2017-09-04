@@ -3,7 +3,7 @@
 install_apt_packages() {
   sudo apt-get -qq update
   sudo apt-get -y upgrade
-  sudo apt-get install -y curl zip unzip \
+  sudo apt-get install -y curl zip unzip bzip2 \
     gcc g++ make bison \
     vim global \
     tig tree jq dos2unix lv silversearcher-ag
