@@ -38,6 +38,7 @@ go_get_packages() {
 #  go get github.com/pilu/fresh
   go get github.com/peco/peco/cmd/peco
   go get github.com/github/hub
+  go get github.com/kardianos/govendor
 }
 
 # install_gvm
