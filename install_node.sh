@@ -2,7 +2,7 @@
 
 # Usage: `./install_node.sh`
 
-NVM_VERSION="v0.33.6"
+NVM_VERSION="v0.33.7"
 NODE_VERSION="lts/carbon"
 
 install_nvm() {
