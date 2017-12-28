@@ -2,7 +2,7 @@
 
 # Usage: `./install_ruby.sh`
 
-RUBY_VERSION=2.4.2
+RUBY_VERSION=2.5.0
 
 install_rbenv() {
   git clone https://github.com/rbenv/rbenv.git ~/.rbenv
