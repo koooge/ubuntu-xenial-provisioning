@@ -26,7 +26,7 @@ install_ruby() {
   rbenv rehash
 
   gem update --system
-  gem install bundler pry pry-doc --no-document
+  gem install bundler pry pry-doc --force --no-document
 }
 
 install_mruby() {
