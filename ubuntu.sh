@@ -22,8 +22,13 @@ install_packages() {
   ./install_docker.sh
 }
 
+install_services() {
+  ./services/install_heroku.sh
+}
+
 install_apt_packages
 install_bash_profile
 curl -L raw.github.com/koooge/dotfiles/master/install.sh | bash
 
 install_packages
+install_services
