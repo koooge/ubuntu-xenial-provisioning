@@ -24,6 +24,7 @@ install_packages() {
 
 install_services() {
   ./services/install_heroku.sh
+  ./services/install_awscli.sh
 }
 
 install_apt_packages
