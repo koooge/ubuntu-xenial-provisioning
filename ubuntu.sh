@@ -20,6 +20,7 @@ install_packages() {
   ./install_node.sh
   ./install_golang.sh
   ./install_java.sh
+  ./install_php.sh
   ./install_docker.sh
 }
 
