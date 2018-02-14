@@ -14,10 +14,16 @@ install_nvm() {
 install_node() {
   nvm install ${NODE_VERSION}
   nvm use ${NODE_VERSION}
+  nvm alias default ${NODE_VERSION}
+}
+
+install_npm_global() {
+  npm install -g express-generator
 }
 
 install_nvm
 install_node
+install_npm_global
 
 nvm version
 node -v
