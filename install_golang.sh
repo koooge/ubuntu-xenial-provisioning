@@ -2,7 +2,8 @@
 
 # Usage `./install_golang.sh && source ~/.bash_profile`
 
-GO_VERSION="1.10.0"
+GO_VERSION=1.10.1
+PECO_VERSION=v0.5.3
 
 GO_URL=https://storage.googleapis.com/golang/go${GO_VERSION}.linux-amd64.tar.gz
 
@@ -37,7 +38,7 @@ go_get_packages() {
 #  go get github.com/pilu/fresh
 #  go get github.com/github/hub
 
-  wget -O - https://github.com/peco/peco/releases/download/v0.5.2/peco_linux_amd64.tar.gz | tar zxf - -C /tmp/
+  wget -O - https://github.com/peco/peco/releases/download/${PECO_VERSION}/peco_linux_amd64.tar.gz | tar zxf - -C /tmp/
   cp /tmp/peco_linux_amd64/peco ${GOPATH}/bin/
 }
 
