@@ -21,9 +21,16 @@ install_npm_global() {
   npm install -g express-generator
 }
 
+install_yarn() {
+  curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+  echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+  sudo apt-get update -qq && sudo apt-get install -y yarn
+}
+
 install_nvm
 install_node
 install_npm_global
+inrall_yarn
 
 nvm version
 node -v
