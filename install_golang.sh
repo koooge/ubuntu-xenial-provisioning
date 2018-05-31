@@ -21,8 +21,7 @@ install_golang() {
 
 go_get_packages() {
   go get golang.org/x/tools/cmd/godoc
-#  go get golang.org/x/tools/cmd/goimports
-#  go get github.com/golang/dep/cmd/dep
+  go get golang.org/x/tools/cmd/goimports
 #  go get golang.org/x/tools/cmd/gorename
 #  go get golang.org/x/tools/cmd/guru
 
