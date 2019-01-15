@@ -6,4 +6,6 @@ sudo bash -c 'echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc
 sudo apt-get update -qq
 sudo apt-get install -y kubectl
 
-echo "source <(kubectl completion bash)" >> ~/.bashrc
+echo "alias k='kubectl'" >> ~/.bash_profile
+echo "source <(kubectl completion bash)" >> ~/.bash_profile
+echo "complete -o default -F __start_kubectl k" >> ~/.bash_profile
